@@ -1,0 +1,33 @@
+.main {
+    margin: auto;
+    width: 80%;
+    position: relative;
+    top: 50px;
+    padding: 20px
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.picture {
+    text-align: center;
+}
+
+#statics {
+    border-collapse: collapse;
+    width: 20%;
+}
+
+#statics td,
+#statics th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+
+
+/* References:
+    https://www.freecodecamp.org/news/html-center-image-css-align-img-center-example/
+    https://www.w3schools.com/css/css_table.asp
+ */
