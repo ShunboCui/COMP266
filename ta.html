@@ -5,6 +5,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./css/input.css">
     <link rel="stylesheet" href="./css/topnav.css">
     <link rel="stylesheet" href="./css/cards.css">
     <title> Teaching assistant job postings </title>
@@ -22,164 +23,179 @@
     </header>
 
     <div class="main">
+        <input type="text" id="textInput" onkeyup="textFilter()" placeholder="Search for job name">
         <h3 class="section_title">Teaching assistant job postings</h3>
-        <div class="row">
-            <div class="column">
-                <div class="post-card">
-                    <div class="post-card-inner">
-                        <div class="post-card-front">
-                            <h4> CIVENG 3P04 - Mechanical Behaviour of Materials </h4>
-                            <ul>
-                                <li>
-                                    <span style="font-weight: bold;"> Location: </span> Central Campus
-                                </li>
-                                <li>
-                                    <span style="font-weight: bold;"> Department: </span> Civil Engineering
-                                </li>
-                                <li>
-                                    <span style="font-weight: bold;"> Salary: </span> $20                                
+        <div class="row" id="cardRow">
+            <span>
+                <div class="column">
+                    <div class="post-card">
+                        <div class="post-card-inner">
+                            <div class="post-card-front">
+                                <h4> CIVENG 3P04 - Mechanical Behaviour of Materials </h4>
+                                <ul>
                                     <li>
-                                        <span style="font-weight: bold;"> Posted Date: </span> 2022/08/17
+                                        <strong> Location: </strong> Central Campus
                                     </li>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="post-card-back">
-                            <ul>
-                                <li>
-                                    <span style="font-weight: bold;"> Job Summary: </span>Leading Tutorials/Overseeing
-                                    Laboratories/Field Trip Supervision,
-                                    Student Consultation, Grading, Preparation, Invigilation
-                                </li>
-                                <li>
-                                    <span style="font-weight: bold;"> Qualifications: </span>Completion of relevant
-                                    undergraduate/
-                                    graduate courses is required.
-                                    Background and/or research focus in Civil Engineering is required.
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="column">
-                <div class="post-card">
-                    <div class="post-card-inner">
-                        <div class="post-card-front">
-                            <h4> CIVENG 2P04 - Statics and Mechanics of Materials </h4>
-                            <ul>
-                                <li>
-                                    <span style="font-weight: bold;"> Location: </span> Central Campus
-                                </li>
-                                <li>
-                                    <span style="font-weight: bold;"> Department: </span> Civil Engineering
-                                </li>
-                                <li>
-                                    <span style="font-weight: bold;"> Salary: </span> $32
                                     <li>
-                                        <span style="font-weight: bold;"> Posted Date: </span> 2022/08/04
+                                        <strong> Department: </strong> Civil Engineering
                                     </li>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="post-card-back">
-                            <ul>
-                                <li>
-                                    <span style="font-weight: bold;"> Job Summary: </span>Leading Tutorials/Overseeing
-                                    Laboratories/Field Trip Supervision,
-                                    Student Consultation, Grading, Preparation, Invigilation
-                                </li>
-                                <li>
-                                    <span style="font-weight: bold;"> Qualifications: </span> Completion of relevant
-                                    undergraduate/
-                                    graduate courses is required.
-                                    Background and/or research focus in Civil Engineering is required.
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="column">
-                <div class="post-card">
-                    <div class="post-card-inner">
-                        <div class="post-card-front">
-                            <h4> Inspire 3AR3 Exploring </h4>
-                            <ul>
-                                <li>
-                                    <span style="font-weight: bold;"> Location: </span> Central Campus
-                                </li>
-                                <li>
-                                    <span style="font-weight: bold;"> Department: </span> Arts & Science
-                                </li>
-                                <li>
-                                    <span style="font-weight: bold;"> Salary: </span> $27
                                     <li>
-                                        <span style="font-weight: bold;"> Posted Date: </span> 2022/07/13
+                                        <strong> Salary: </strong> $20
+                                    <li>
+                                        <strong> Posted Date: </strong> 2022/08/17
                                     </li>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="post-card-back">
-                            <ul>
-                                <li>
-                                    <span style="font-weight: bold;"> Job Summary: </span>Leading Tutorials/Overseeing
-                                    Laboratories/Field Trip Supervision,
-                                    Student Consultation, Grading, Preparation, Invigilation
-                                </li>
-                                <li>
-                                    <span style="font-weight: bold;"> Qualifications: </span>Must not hold a completed
-                                    undergraduate
-                                    degree.
-                                    Experience with Athletics and Recreation department preferred.
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="column">
-                <div class="post-card">
-                    <div class="post-card-inner">
-                        <div class="post-card-front">
-                            <h4> Research Assistant IV </h4>
-                            <ul>
-                                <li>
-                                    <span style="font-weight: bold;"> Location: </span> Medical secretary
-                                </li>
-                                <li>
-                                    <span style="font-weight: bold;"> Department: </span> School of Social Work
-                                </li>
-                                <li>
-                                    <span style="font-weight: bold;"> Salary: </span> $22 - $33
-                                </li>
-                                <li>
-                                    <span style="font-weight: bold;"> Posted Date: </span> 2022/06/25
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="post-card-back">
-                            <ul>
-                                <li>
-                                    <span style="font-weight: bold;"> Job Summary: </span>The RA will work as a member
-                                    of research team
-                                    together with students from Social Work and the Social Sciences.
-                                </li>
-                                <li>
-                                    <span style="font-weight: bold;"> Qualifications: </span>Good communication skills,
-                                    Comfort working
-                                    with social media platforms.
-                                </li>
-                            </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="post-card-back">
+                                <ul>
+                                    <li>
+                                        <strong> Job Summary: </strong>Leading
+                                        Tutorials/Overseeing
+                                        Laboratories/Field Trip Supervision,
+                                        Student Consultation, Grading, Preparation, Invigilation
+                                    </li>
+                                    <li>
+                                        <strong> Qualifications: </strong>Completion of relevant
+                                        undergraduate/
+                                        graduate courses is required.
+                                        Background and/or research focus in Civil Engineering is required.
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
+            </span>
+            <span>
+                <div class="column">
+                    <div class="post-card">
+                        <div class="post-card-inner">
+                            <div class="post-card-front">
+                                <h4> CIVENG 2P04 - Statics and Mechanics of Materials </h4>
+                                <ul>
+                                    <li>
+                                        <strong> Location: </strong> Central Campus
+                                    </li>
+                                    <li>
+                                        <strong> Department: </strong> Civil Engineering
+                                    </li>
+                                    <li>
+                                        <strong> Salary: </strong> $32
+                                    <li>
+                                        <strong> Posted Date: </strong> 2022/08/04
+                                    </li>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="post-card-back">
+                                <ul>
+                                    <li>
+                                        <strong> Job Summary: </strong>Leading
+                                        Tutorials/Overseeing
+                                        Laboratories/Field Trip Supervision,
+                                        Student Consultation, Grading, Preparation, Invigilation
+                                    </li>
+                                    <li>
+                                        <strong> Qualifications: </strong> Completion of relevant
+                                        undergraduate/
+                                        graduate courses is required.
+                                        Background and/or research focus in Civil Engineering is required.
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </span>
+            <span>
+                <div class="column">
+                    <div class="post-card">
+                        <div class="post-card-inner">
+                            <div class="post-card-front">
+                                <h4> Inspire 3AR3 Exploring </h4>
+                                <ul>
+                                    <li>
+                                        <strong> Location: </strong> Central Campus
+                                    </li>
+                                    <li>
+                                        <strong> Department: </strong> Arts & Science
+                                    </li>
+                                    <li>
+                                        <strong> Salary: </strong> $27
+                                    <li>
+                                        <strong> Posted Date: </strong> 2022/07/13
+                                    </li>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="post-card-back">
+                                <ul>
+                                    <li>
+                                        <strong> Job Summary: </strong>Leading
+                                        Tutorials/Overseeing
+                                        Laboratories/Field Trip Supervision,
+                                        Student Consultation, Grading, Preparation, Invigilation
+                                    </li>
+                                    <li>
+                                        <strong> Qualifications: </strong>Must not hold a
+                                        completed
+                                        undergraduate
+                                        degree.
+                                        Experience with Athletics and Recreation department preferred.
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </span>
+            <span>
+                <div class="column">
+                    <div class="post-card">
+                        <div class="post-card-inner">
+                            <div class="post-card-front">
+                                <h4> Research Assistant IV </h4>
+                                <ul>
+                                    <li>
+                                        <strong> Location: </strong> Medical secretary
+                                    </li>
+                                    <li>
+                                        <strong> Department: </strong> School of Social Work
+                                    </li>
+                                    <li>
+                                        <strong> Salary: </strong> $22 - $33
+                                    </li>
+                                    <li>
+                                        <strong> Posted Date: </strong> 2022/06/25
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="post-card-back">
+                                <ul>
+                                    <li>
+                                        <strong> Job Summary: </strong>The RA will work as a
+                                        member
+                                        of research team
+                                        together with students from Social Work and the Social Sciences.
+                                    </li>
+                                    <li>
+                                        <strong> Qualifications: </strong>Good communication
+                                        skills,
+                                        Comfort working
+                                        with social media platforms.
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </span>
         </div>
     </div>
+
+    <script src="./scripts/textFilter.js"></script>
+
 </body>
 
 </html>
