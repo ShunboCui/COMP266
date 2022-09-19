@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="./css/input.css">
     <link rel="stylesheet" href="./css/topnav.css">
     <link rel="stylesheet" href="./css/cards.css">
+    <link rel="stylesheet" href="./css/filterButton.css">
     <title> Faculty job postings </title>
 </head>
 
@@ -25,8 +26,16 @@
     <div class="main">
         <input type="text" id="textInput" onkeyup="textFilter()" placeholder="Search for job name">
         <h3 class="section_title">Faculty job postings</h3>
+
+        <div id="myBtnContainer">
+            <button class="btn" onclick="filterSelection('all')">Show all</button>
+            <button class="btn" onclick="filterSelection('<20')"><$20</button>
+            <button class="btn" onclick="filterSelection('20-30')">$20-$30</button>
+            <button class="btn" onclick="filterSelection('>30')">>$30</button>
+        </div>
+
         <div class="row" id="cardRow">
-            <span>
+            <span class="20-30">
                 <div class="column">
                     <div class="post-card">
                         <div class="post-card-inner">
@@ -59,7 +68,8 @@
                                         <strong> Qualifications: </strong>Hold an MD with
                                         specialty
                                         training in
-                                        Anesthesia, and will have experience teaching undergraduate medical students,
+                                        Anesthesia, and will have experience teaching undergraduate medical
+                                        students,
                                         postgraduate residents in anesthesia
                                     </li>
                                 </ul>
@@ -69,7 +79,7 @@
                 </div>
             </span>
 
-            <span>
+            <span class=">30">
                 <div class="column">
                     <div class="post-card">
                         <div class="post-card-inner">
@@ -97,10 +107,12 @@
                                         <strong> Job Summary: </strong>The positions will be
                                         filled
                                         across multiple
-                                        departments within the Faculty and will be located on the main university campus
+                                        departments within the Faculty and will be located on the main university
+                                        campus
                                         to
                                         begin July 1, 2022.
-                                        Consideration for positions at the rank of Associate Professor or Professor will
+                                        Consideration for positions at the rank of Associate Professor or Professor
+                                        will
                                         be
                                         based on
                                         commensurate experience.
@@ -117,7 +129,8 @@
                     </div>
                 </div>
             </span>
-            <span>
+
+            <span class=">30">
                 <div class="column">
                     <div class="post-card">
                         <div class="post-card-inner">
@@ -151,7 +164,8 @@
                                     <li>
                                         <strong> Qualifications: </strong> Applicants must have a
                                         Fellowship in Burns, Certification in Plastics or General Surgery from
-                                        the Royal College of Physicians and Surgeons of Canada, or equivalent, and be
+                                        the Royal College of Physicians and Surgeons of Canada, or equivalent, and
+                                        be
                                         eligible for licensure in the Province of Ontario.
                                     </li>
                                 </ul>
@@ -160,7 +174,7 @@
                     </div>
                 </div>
             </span>
-            <span>
+            <span class="<20">
                 <div class="column">
                     <div class="post-card">
                         <div class="post-card-inner">
@@ -175,7 +189,7 @@
                                         <strong> Department: </strong> Surgery
                                     </li>
                                     <li>
-                                        <strong> Salary: </strong> $35
+                                        <strong> Salary: </strong> $19
                                     </li>
                                     <li>
                                         <strong> Posted Date: </strong> 2022/06/22
@@ -211,7 +225,7 @@
     </div>
 
     <script src="./scripts/textFilter.js"></script>
-
+    <script src="./scripts/filterSelection.js"></script>
 </body>
 
 </html>

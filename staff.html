@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="./css/input.css">
     <link rel="stylesheet" href="./css/topnav.css">
     <link rel="stylesheet" href="./css/cards.css">
+    <link rel="stylesheet" href="./css/filterButton.css">
     <title> Staff job postings </title>
 </head>
 
@@ -25,8 +26,16 @@
     <div class="main">
         <input type="text" id="textInput" onkeyup="textFilter()" placeholder="Search for job name">
         <h3 class="section_title">Staff job postings</h3>
+
+        <div id="myBtnContainer">
+            <button class="btn" onclick="filterSelection('all')">Show all</button>
+            <button class="btn" onclick="filterSelection('<20')"><$20</button>
+            <button class="btn" onclick="filterSelection('20-30')">$20-$30</button>
+            <button class="btn" onclick="filterSelection('>30')">>$30</button>
+        </div>
+
         <div class="row" id="cardRow">
-            <span>
+            <span class="20-30">
                 <div class="column">
                     <div class="post-card">
                         <div class="post-card-inner">
@@ -71,7 +80,7 @@
                 </div>
             </span>
 
-            <span>
+            <span class="20-30">
                 <div class="column">
                     <div class="post-card">
                         <div class="post-card-inner">
@@ -112,7 +121,7 @@
                     </div>
                 </div>
             </span>
-            <span>
+            <span class=">30">
                 <div class="column">
                     <div class="post-card">
                         <div class="post-card-inner">
@@ -126,7 +135,7 @@
                                         <strong> Department: </strong> Student experience
                                     </li>
                                     <li>
-                                        <strong> Salary: </strong> $27 - $40
+                                        <strong> Salary: </strong> $34 - $40
                                     </li>
                                     <li>
                                         <strong> Posted Date: </strong> 2022/06/13
@@ -155,7 +164,7 @@
                     </div>
                 </div>
             </span>
-            <span>
+            <span class="20-30">
                 <div class="column">
                     <div class="post-card">
                         <div class="post-card-inner">
@@ -195,7 +204,7 @@
                     </div>
                 </div>
             </span>
-            <span>
+            <span class= "<20">
                 <div class="column">
                     <div class="post-card">
                         <div class="post-card-inner">
@@ -209,7 +218,7 @@
                                         <strong> Department: </strong> HR Payroll & Data Management
                                     </li>
                                     <li>
-                                        <strong> Salary: </strong> $56800 - $73500 (annual)
+                                        <strong> Salary: </strong> $19
                                     </li>
                                     <li>
                                         <strong> Posted Date: </strong> 2022/04/11
@@ -235,7 +244,7 @@
                     </div>
                 </div>
             </span>
-            <span>
+            <span class=">30">
                 <div class="column">
                     <div class="post-card">
                         <div class="post-card-inner">
@@ -246,10 +255,10 @@
                                         <strong> Location: </strong> Medical secretary
                                     </li>
                                     <li>
-                                        <strong> Department: </strong> $26.14 - $39.35
+                                        <strong> Department: </strong> $35
                                     </li>
                                     <li>
-                                        <strong> Salary: </strong> $26.14 - $39.35
+                                        <strong> Salary: </strong> $36.14 - $39.35
                                     </li>
                                     <li>
                                         <strong> Posted Date: </strong> 2022/03/22
@@ -278,8 +287,9 @@
             </span>
         </div>
     </div>
-    
+
     <script src="./scripts/textFilter.js"></script>
+    <script src="./scripts/filterSelection.js"></script>
 
 </body>
 
