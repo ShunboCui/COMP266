@@ -26,22 +26,35 @@
       <h3 class="title">Contact me</h3>
       <form action="#" class="contact-form">
         <h4>Send me any suggestions to improve the site.</h4>
+
         <label for="name">Name</label>
-        <input type="text" id="name" placeholder="Your name">
+        <div class="textBox">
+          <input type="text" name="name" placeholder="Your name" required>
+        </div>
 
         <label for="contact">Contact</label>
-        <input type="text" id="contact" placeholder="Contact (Email/Phone)">
+        <div class="textBox">
+          <input type="email" name="contact" placeholder="Contact (Email)" required>
+        </div>
 
         <label for="title">Title</label>
-        <input type="text" id="title" placeholder="Title">
+        <div class="textBox">
+          <input type="text" name="title" placeholder="Title" required>
+        </div>
 
         <label for="message">Message</label>
-        <input type="text" id="message" placeholder="Message">
+        <div class="textBox">
+          <input type="text" name="message" placeholder="Message" required>
+        </div>
 
         <input type="submit" value="Submit">
       </form>
     </div>
   </div>
+
+  <script src="./scripts/jquery.min.js"></script>
+  <script src="./scripts/jquery.validate.js"></script>
+  <script src="./scripts/validation.js"></script>
 </body>
 
 </html>

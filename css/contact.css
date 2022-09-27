@@ -21,6 +21,16 @@ input[type=text] {
     box-sizing: border-box;
 }
 
+input[type=email] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
 input[type=submit] {
     width: 100%;
     background-color: #10aed6;
@@ -32,6 +42,9 @@ input[type=submit] {
     cursor: pointer;
 }
 
+.error{
+    color: orange;
+  }
 /* References:
     https://www.w3schools.com/css/css_form.asp
 */
